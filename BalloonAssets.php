@@ -5,7 +5,7 @@
  * Date: 25.03.18
  * Time: 18:05
  */
-namespace app\widgets\ckeditor5;
+namespace stkevich\ckeditor5;
 
 use yii\web\AssetBundle;
 
