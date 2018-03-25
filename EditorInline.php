@@ -17,13 +17,16 @@ class EditorInline extends CKEditor5
     public $editorType = 'Inline';
 
     /**
-     * @param \yii\web\View $view
+     * @inheritdoc
      */
     protected function registerAssets($view)
     {
         InlineAssets::register($view);
     }
 
+    /**
+     * @inheritdoc
+     */
     protected function printEditorTag()
     {
         print Html::tag('div', 'qweaasd', $this->options);

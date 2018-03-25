@@ -17,13 +17,16 @@ class EditorBalloon extends CKEditor5
     public $editorType = 'Balloon';
 
     /**
-     * @param \yii\web\View $view
+     * @inheritdoc
      */
     protected function registerAssets($view)
     {
         BalloonAssets::register($view);
     }
 
+    /**
+     * @inheritdoc
+     */
     protected function printEditorTag()
     {
         print Html::tag('div', '', $this->options);

@@ -17,13 +17,16 @@ class EditorClassic extends CKEditor5
     public $editorType = 'Classic';
 
     /**
-     * @param \yii\web\View $view
+     * @inheritdoc
      */
     protected function registerAssets($view)
     {
         ClassicAssets::register($view);
     }
 
+    /**
+     * @inheritdoc
+     */
     protected function printEditorTag()
     {
         if ($this->hasModel()) {

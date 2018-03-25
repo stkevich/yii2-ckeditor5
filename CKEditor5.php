@@ -23,6 +23,9 @@ abstract class CKEditor5 extends InputWidget
      */
     public $clientOptions = [];
 
+    /**
+     * @var array Toolbar options array
+     */
     public $toolbar = [];
 
     /**
