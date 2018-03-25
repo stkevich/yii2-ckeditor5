@@ -15,7 +15,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"stkevich\\yii2-ckeditor5\\": "src"
+			"stkevich\\ckeditor5\\": ""
 		}
 	}
 }
