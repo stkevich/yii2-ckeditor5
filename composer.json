@@ -1,0 +1,21 @@
+{
+    "name": "stkevich/yii2-ckeditor5",
+    "description": "ckeditor 5 widget for yii2 framework",
+    "type": "extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stas Kevich",
+            "email": "st.kevich@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+	"require": {
+		"yiisoft/yii2": "~2.0.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"stkevich\\yii2-ckeditor5\\": "src"
+		}
+	}
+}
