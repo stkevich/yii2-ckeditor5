@@ -1,6 +1,6 @@
 YII2 CKEditor 5
 ==================
-More details about it on author site http://odyniec.net/projects/imgareaselect/usage.html
+More details about it on site https://docs.ckeditor.com/ckeditor5/latest/builds/
 
 Installation
 ------------
