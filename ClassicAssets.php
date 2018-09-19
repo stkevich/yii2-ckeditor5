@@ -16,7 +16,7 @@ class ClassicAssets extends AssetBundle
     ];
 
     public $js = [
-        'https://cdn.ckeditor.com/ckeditor5/1.0.0-beta.1/classic/ckeditor.js',
+        'https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js',
     ];
 
     public $depends = [

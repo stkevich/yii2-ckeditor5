@@ -53,17 +53,16 @@ abstract class CKEditor5 extends InputWidget
      */
     protected function registerEditorJS()
     {
-        $option = [];
         if (!empty($this->toolbar)) {
-            $option['toolbar'] = $this->toolbar;
+            $this->clientOptions['toolbar'] = $this->toolbar;
         }
         if (!empty($this->uploadUrl)) {
-            $option['ckfinder'] = ['uploadUrl' => $this->uploadUrl];
+            $this->clientOptions['ckfinder'] = ['uploadUrl' => $this->uploadUrl];
         }
-        $option = Json::encode($option);
+        $clientOptions = Json::encode($this->clientOptions);
 
         $js = new JsExpression(
-            $this->editorType . "Editor.create( document.querySelector( '#{$this->options['id']}' ), {$option} ).catch( error => {console.error( error );} );"
+            $this->editorType . "Editor.create( document.querySelector( '#{$this->options['id']}' ), {$clientOptions} ).catch( error => {console.error( error );} );"
         );
         $this->view->registerJs($js);
     }

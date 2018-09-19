@@ -16,7 +16,7 @@ class InlineAssets extends AssetBundle
     ];
 
     public $js = [
-        'https://cdn.ckeditor.com/ckeditor5/1.0.0-beta.1/inline/ckeditor.js',
+        'https://cdn.ckeditor.com/ckeditor5/11.0.1/inline/ckeditor.js',
     ];
 
     public $depends = [
